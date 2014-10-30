@@ -44,7 +44,7 @@ def sync(source, target):
 		return False
 
 # процедура отправки почты 
-def send_mail(send_from, send_to, subject, text, files=[], server='smtp.cons.tsk.ru'):
+def send_mail(send_from, send_to, subject, text, files=[], server='smtp.typa.ru'):
 	from smtplib import SMTP
 	from os import path
 	from email.MIMEMultipart import MIMEMultipart
@@ -153,8 +153,8 @@ if __name__ == "__main__":
 	# список каталогов для копирования
 	cwd_list = [['o:\\Windows\\!Script\\Backup', '\\\\master\\apps\\temp\\viv\\backup'],['o:\\ocs-ng', '\\\\master\\apps\\temp\\viv\\ocs-ng']]
 	# настройка почты
-	from_addr = 'viv@cons.tsk.ru'
-	tech_addr = ['viv@cons.tsk.ru', 'taa@cons.tsk.ru']
+	from_addr = 'viv@typa.ru'
+	tech_addr = ['viv@typa.ru', 'user2@typa.ru']
 	# прочие переменные 
 	files_attach = [] # список файлов для вложения
 	msg = ''          # тело письма
