@@ -146,12 +146,12 @@ if __name__ == "__main__":
 	####################
 	##   Переменные   ##
 	####################
-	work_dir = 'C:\Backup'
+	work_dir = 'C:\Windows\!Script\Backup'
 	source_disk = 'c:'
 	destin_disk = 'o:'
 	param_script = 'vs_generated.cmd'
 	# список каталогов для копирования
-	cwd_list = [['o:\\backup', '\\\\master\\apps\\temp\\viv\\backup'],['o:\\ocs-ng', '\\\\master\\apps\\temp\\viv\\ocs-ng']]
+	cwd_list = [['o:\\Windows\\!Script\\Backup', '\\\\master\\apps\\temp\\viv\\backup'],['o:\\ocs-ng', '\\\\master\\apps\\temp\\viv\\ocs-ng']]
 	# настройка почты
 	from_addr = 'viv@cons.tsk.ru'
 	tech_addr = ['viv@cons.tsk.ru', 'taa@cons.tsk.ru']
