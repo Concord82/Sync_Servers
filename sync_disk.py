@@ -16,7 +16,7 @@ def sync(source, target):
 	# если в каталоге скрипта отсутствует каталог LOG создаем его
 	if not(path.exists(getcwd() + '\\LOG')) or not(path.isdir(getcwd() + '\\LOG')):
 			mkdir(getcwd() + '\\LOG')
-	log_file = source.split('\\')[1]+'.txt'
+	log_file = source.split('\\')[-1]+'.txt'
 	# Выплнить комманду OS robocopy
 	# from_disk + ':\\' + source - копировать каталог источник
 	# to_disk + ':\\' + source   - целевой каталог
